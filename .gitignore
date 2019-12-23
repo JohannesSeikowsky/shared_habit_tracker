@@ -1,0 +1,6 @@
+configs.py
+credentials.json
+done_dates.txt
+habits_content.txt
+token.pickle
+*.pyc
