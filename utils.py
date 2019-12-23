@@ -43,7 +43,7 @@ def run_weekly(func):
 
 
 def run_daily(func, arg1, arg2):
-	# ensures that the pass in function only gets run once a day after a specified time
+	# ensures that the passed in function only gets run once a day after a specified time
 	today = datetime.today().strftime('%d.%m')
 	current_hour = datetime.now().hour
 
