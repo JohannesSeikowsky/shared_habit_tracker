@@ -19,7 +19,6 @@ def send_email(subject, content, target):
 	mail.close()
 
 
-## replace path_to_project
 def get_done_dates():
 	done_dates = open(path_to_project + "done_dates.txt").read().splitlines()
 	return done_dates
@@ -44,9 +43,7 @@ def run_weekly(func):
 
 
 def run_daily(func, arg1, arg2):
-	""" Ensures that the pass in function only gets run once a day after a specified time. 
-	Necessary in our case because can't set Cronjob to a specified time as machine maybe off 
-	at that time. Hence have to run the job in intervals and want to avoid repeat-executions."""
+	# ensures that the pass in function only gets run once a day after a specified time
 	today = datetime.today().strftime('%d.%m')
 	current_hour = datetime.now().hour
 
